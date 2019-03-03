@@ -19,6 +19,26 @@ body {
     width: 950px;
     margin: 0 auto;
 }
+.wraper {
+    width: 620px;
+    margin: 0 auto;
+    color: #FFF;
+    padding-top: 100px;
+    &__text {
+        text-align: center;
+        line-height: 26px;
+        font-size: 13px;
+    }
+    &__name {
+    display: inline-block;
+    font-size: 23px;
+    border: 1px solid #FFF;
+    margin-left: auto;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    }
+
+}
 .page-main {
     background-image: url(../img/Layer%2023.png);
     background-repeat: no-repeat;
@@ -55,6 +75,86 @@ body {
     }
     p {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 21px;
     }
+}
+.block-gallery {
+    .writer-text {
+        display: flex;
+        padding-top: 70px;
+        margin-bottom: 60px;
+         &__name {
+            font-size: 30px;
+            margin-right: 65px;
+        }
+        &__text {
+            font-size: 13px;
+            width: 505px;
+            line-height: 20px;
+        }
+    }
+    .block-grid {
+        display: grid;
+        grid-template-areas:
+            "a b b b"
+            "c e f f";
+//        grid-template-areas: "a a" "b b"
+        .grid-item {
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .grid-item-pic1 {
+            background-image: url(../img/Layer%2029.png);
+            grid-area: a;
+            width: 300px;
+            height: 200px;
+        }
+        .grid-item-pic2 {
+            background-image: url(../img/Layer%2028.png);
+            grid-area: b;
+            width: 400px;
+            height: 265px;
+        }
+        .grid-item-pic3{
+            background-image: url(../img/Layer%2027.png);
+            grid-area: c;
+            width: 300px;
+            height: 300px;
+        }
+//        .grid-item-pic4 {
+//            background-image: url(../img/Layer%2026.png);
+//            grid-area: d;
+//            width: 180px;
+//            height: 110px;
+//        }
+        .grid-item-pic5 {
+            background-image: url(../img/Layer%2024.png);
+            grid-area: e;
+            width: 180px;
+            height: 130px;
+        }
+        .grid-item-pic6 {
+            background-image: url(../img/Layer%2025.png);
+            grid-area: f;
+            width: 220px;
+            height: 245px;
+        }
+    }
+
+}
+.block-sideImage {
+    background-image: url(../img/Layer%2030.png);
+    width: 230px;
+    height: 745px;
+    display: block;
+    position: absolute;
+    right: 450px;
+    top: 650px;
+}
+.page_banner {
+    background-image: url(../img/Layer%2031.png);
+    height: 325px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
